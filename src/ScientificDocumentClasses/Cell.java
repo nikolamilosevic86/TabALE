@@ -13,7 +13,7 @@ public class Cell {
 	private Cell StubRef;
 	private Cell SuperRowRef;
 	private Cell HeadStubRef;
-	public LinkedList<Annotation> annotations;
+	public LinkedList<InputAnnotation> annotations;
 	/**
 	 * @return the iD
 	 */
