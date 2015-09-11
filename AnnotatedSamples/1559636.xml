@@ -1,0 +1,2465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Article>
+<PMCID>1559636</PMCID>
+<PMID>16879756</PMID>
+<p-issn>1471-2288</p-issn>
+<e-issn/>
+<Title>Estimation of dynamical model parameters taking into account undetectable marker values</Title>
+<Authors>
+<Author>
+<AuthorName>Thiébaut, Rodolphe</AuthorName>
+<AuthorAffiliation>INSERM E0338 Biostatistics, Bordeaux 2 University, Bordeaux, France</AuthorAffiliation>
+<AuthorAffiliation>INSERM U593, Bordeaux 2 University, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>rt@isped.u-bordeaux2.fr</AuthorEmail>
+</Author>
+<Author>
+<AuthorName>Guedj, Jérémie</AuthorName>
+<AuthorAffiliation>INSERM E0338 Biostatistics, Bordeaux 2 University, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>jg1@isped.u-bordeaux2.fr</AuthorEmail>
+</Author>
+<Author>
+<AuthorName>Jacqmin-Gadda, Hélène</AuthorName>
+<AuthorAffiliation>INSERM E0338 Biostatistics, Bordeaux 2 University, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>hjg@isped.u-bordeaux2.fr</AuthorEmail>
+</Author>
+<Author>
+<AuthorName>Chêne, Geneviève</AuthorName>
+<AuthorAffiliation>INSERM U593, Bordeaux 2 University, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>gc@isped.u-bordeaux2.fr</AuthorEmail>
+</Author>
+<Author>
+<AuthorName>Trimoulet, Pascale</AuthorName>
+<AuthorAffiliation>Department of virology, Bordeaux University Hospital, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>pascale.trimoulet@chu-bordeaux.fr</AuthorEmail>
+</Author>
+<Author>
+<AuthorName>Neau, Didier</AuthorName>
+<AuthorAffiliation>Department of infectious disease, Bordeaux University Hospital, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>didier.neau@chu-bordeaux.fr</AuthorEmail>
+</Author>
+<Author>
+<AuthorName>Commenges, Daniel</AuthorName>
+<AuthorAffiliation>INSERM E0338 Biostatistics, Bordeaux 2 University, Bordeaux, France</AuthorAffiliation>
+<AuthorEmail>dc@isped.u-bordeaux2.fr</AuthorEmail>
+</Author>
+</Authors>
+<KeyWords/>
+<JournalInformation>
+<PublisherName>BioMed Central</PublisherName>
+<PublisherLocation>London</PublisherLocation>
+<Venue/>
+<journal>BMC Medical Research Methodology</journal>
+</JournalInformation>
+<Abstract>BackgroundMathematical models are widely used for studying the dynamic of infectious agents such as hepatitis C virus (HCV). Most often, model parameters are estimated using standard least-square procedures for each individual. Hierarchical models have been proposed in such applications. However, another issue is the left-censoring (undetectable values) of plasma viral load due to the lack of sensitivity of assays used for quantification. A method is proposed to take into account left-censored values for estimating parameters of non linear mixed models and its impact is demonstrated through a simulation study and an actual clinical trial of anti-HCV drugs.MethodsThe method consists in a full likelihood approach distinguishing the contribution of observed and left-censored measurements assuming a lognormal distribution of the outcome. Parameters of analytical solution of system of differential equations taking into account left-censoring are estimated using standard software.ResultsA simulation study with only 14% of measurements being left-censored showed that model parameters were largely biased (from -55% to +133% according to the parameter) with the exception of the estimate of initial outcome value when left-censored viral load values are replaced by the value of the threshold. When left-censoring was taken into account, the relative bias on fixed effects was equal or less than 2%. Then, parameters were estimated using the 100 measurements of HCV RNA available (with 12% of left-censored values) during the first 4 weeks following treatment initiation in the 17 patients included in the trial. Differences between estimates according to the method used were clinically significant, particularly on the death rate of infected cells. With the crude approach the estimate was 0.13 day-1 (95% confidence interval [CI]: 0.11; 0.17) compared to 0.19 day-1 (CI: 0.14; 0.26) when taking into account left-censoring. The relative differences between estimates of individual treatment efficacy according to the method used varied from 0.001% to 37%.ConclusionWe proposed a method that gives unbiased estimates if the assumed distribution is correct (e.g. lognormal) and that is easy to use with standard software.</Abstract>
+<Tables>
+<Table>
+<TableOrder>Table 1</TableOrder>
+<TableCaption>Relative bias of model parameters using non linear mixed models taking into account left-censored (undetectable) values (corrected) or not (crude) with simulated data. N = 20 patients, 1000 simulations, 14% left-censored measures in average.</TableCaption>
+<TableFooter/>
+<TableStructureType>SUBHEADER</TableStructureType>
+<TablePragmaticClass>settings</TablePragmaticClass>
+<TabHasXML>yes</TabHasXML>
+<Cells>
+<Cell>
+<CellID>0.0</CellID>
+<CellValue>Parameter and true value</CellValue>
+<Annotations>
+<Annotation Content="Parameter" End="9" ID="7227778" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=parameter"/>
+<Annotation Content="Parameter" End="9" ID="http://dbpedia.org/resource/Parameter" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Parameter"/>
+<Annotation Content="parameter" End="9" ID="C0549193" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0549193"/>
+<Annotation Content="parameter" End="9" ID="C1704769" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1704769"/>
+<Annotation Content="parameter" End="9" ID="C2350001" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2350001"/>
+<Annotation Content="true" End="18" ID="2008188" Source="WordNet" Start="14" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=true(a)"/>
+<Annotation Content="True Value" End="24" ID="http://dbpedia.org/resource/True_Value" Source="DBPedia" Start="14" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/True_Value"/>
+<Annotation Content="true" End="18" ID="C0205238" Source="MetaMap" Start="14" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205238"/>
+<Annotation Content="value" End="24" ID="5782803" Source="WordNet" Start="19" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=value"/>
+<Annotation Content="value" End="24" ID="C1522609" Source="MetaMap" Start="19" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1522609"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.1</CellID>
+<CellValue>Parameter and true value</CellValue>
+<Annotations>
+<Annotation Content="Parameter" End="9" ID="7227778" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=parameter"/>
+<Annotation Content="Parameter" End="9" ID="http://dbpedia.org/resource/Parameter" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Parameter"/>
+<Annotation Content="parameter" End="9" ID="C0549193" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0549193"/>
+<Annotation Content="parameter" End="9" ID="C1704769" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1704769"/>
+<Annotation Content="parameter" End="9" ID="C2350001" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2350001"/>
+<Annotation Content="true" End="18" ID="2008188" Source="WordNet" Start="14" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=true(a)"/>
+<Annotation Content="True Value" End="24" ID="http://dbpedia.org/resource/True_Value" Source="DBPedia" Start="14" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/True_Value"/>
+<Annotation Content="true" End="18" ID="C0205238" Source="MetaMap" Start="14" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205238"/>
+<Annotation Content="value" End="24" ID="5782803" Source="WordNet" Start="19" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=value"/>
+<Annotation Content="value" End="24" ID="C1522609" Source="MetaMap" Start="19" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1522609"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.2</CellID>
+<CellValue>Crude estimate</CellValue>
+<Annotations>
+<Annotation Content="Crude" End="5" ID="14783893" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=petroleum"/>
+<Annotation Content="estimate" End="14" ID="6692742" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="estimate" End="14" ID="C0750572" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.3</CellID>
+<CellValue>Crude estimate</CellValue>
+<Annotations>
+<Annotation Content="Crude" End="5" ID="14783893" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=petroleum"/>
+<Annotation Content="estimate" End="14" ID="6692742" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="estimate" End="14" ID="C0750572" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.4</CellID>
+<CellValue>Corrected estimate</CellValue>
+<Annotations>
+<Annotation Content="Corrected" End="9" ID="196680" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=correct"/>
+<Annotation Content="Corrected" End="9" ID="2495863" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=right"/>
+<Annotation Content="Corrected" End="9" ID="815558" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=chastise"/>
+<Annotation Content="Corrected" End="9" ID="2646834" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=compensate"/>
+<Annotation Content="Corrected" End="9" ID="2529138" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discipline"/>
+<Annotation Content="Corrected" End="9" ID="1953286" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=decline"/>
+<Annotation Content="Corrected" End="9" ID="292692" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=adjust"/>
+<Annotation Content="Corrected" End="9" ID="78668" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=correct"/>
+<Annotation Content="corrected" End="9" ID="C0205202" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205202"/>
+<Annotation Content="estimate" End="18" ID="6692742" Source="WordNet" Start="10" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="estimate" End="18" ID="C0750572" Source="MetaMap" Start="10" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.5</CellID>
+<CellValue>Corrected estimate</CellValue>
+<Annotations>
+<Annotation Content="Corrected" End="9" ID="196680" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=correct"/>
+<Annotation Content="Corrected" End="9" ID="2495863" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=right"/>
+<Annotation Content="Corrected" End="9" ID="815558" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=chastise"/>
+<Annotation Content="Corrected" End="9" ID="2646834" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=compensate"/>
+<Annotation Content="Corrected" End="9" ID="2529138" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discipline"/>
+<Annotation Content="Corrected" End="9" ID="1953286" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=decline"/>
+<Annotation Content="Corrected" End="9" ID="292692" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=adjust"/>
+<Annotation Content="Corrected" End="9" ID="78668" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=correct"/>
+<Annotation Content="corrected" End="9" ID="C0205202" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205202"/>
+<Annotation Content="estimate" End="18" ID="6692742" Source="WordNet" Start="10" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="estimate" End="18" ID="C0750572" Source="MetaMap" Start="10" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.0</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>0.0</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.1</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>0.1</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<StubRef>1.0</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.2</CellID>
+<CellValue>Estimates</CellValue>
+<Annotations>
+<Annotation Content="Estimates" End="9" ID="5731896" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="863077" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="6442176" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=appraisal"/>
+<Annotation Content="Estimates" End="9" ID="6692742" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="6125372" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="http://dbpedia.org/resource/Estimates" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Estimates"/>
+<Annotation Content="estimates" End="9" ID="C0750572" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.2</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<StubRef>1.0</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.3</CellID>
+<CellValue>Relative bias (%)</CellValue>
+<Annotations>
+<Annotation Content="Relative" End="8" ID="6277" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=relative"/>
+<Annotation Content="Relative" End="8" ID="507699" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=proportional"/>
+<Annotation Content="relative" End="8" ID="C0080103" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0080103"/>
+<Annotation Content="relative" End="8" ID="C0205345" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205345"/>
+<Annotation Content="relative" End="8" ID="C1547039" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1547039"/>
+<Annotation Content="bias" End="13" ID="6120220" Source="WordNet" Start="9" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=bias"/>
+<Annotation Content="bias" End="13" ID="13719000" Source="WordNet" Start="9" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=diagonal"/>
+<Annotation Content="Bias" End="13" ID="http://dbpedia.org/resource/Bias" Source="DBPedia" Start="9" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Bias"/>
+<Annotation Content="bias" End="13" ID="C0242568" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0242568"/>
+<Annotation Content="bias" End="13" ID="C1504315" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1504315"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.3</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<StubRef>1.0</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.4</CellID>
+<CellValue>Estimates</CellValue>
+<Annotations>
+<Annotation Content="Estimates" End="9" ID="5731896" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="863077" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="6442176" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=appraisal"/>
+<Annotation Content="Estimates" End="9" ID="6692742" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="6125372" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimates" End="9" ID="http://dbpedia.org/resource/Estimates" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Estimates"/>
+<Annotation Content="estimates" End="9" ID="C0750572" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.4</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<StubRef>1.0</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.5</CellID>
+<CellValue>Relative bias (%)</CellValue>
+<Annotations>
+<Annotation Content="Relative" End="8" ID="6277" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=relative"/>
+<Annotation Content="Relative" End="8" ID="507699" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=proportional"/>
+<Annotation Content="relative" End="8" ID="C0080103" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0080103"/>
+<Annotation Content="relative" End="8" ID="C0205345" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205345"/>
+<Annotation Content="relative" End="8" ID="C1547039" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1547039"/>
+<Annotation Content="bias" End="13" ID="6120220" Source="WordNet" Start="9" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=bias"/>
+<Annotation Content="bias" End="13" ID="13719000" Source="WordNet" Start="9" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=diagonal"/>
+<Annotation Content="Bias" End="13" ID="http://dbpedia.org/resource/Bias" Source="DBPedia" Start="9" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Bias"/>
+<Annotation Content="bias" End="13" ID="C0242568" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0242568"/>
+<Annotation Content="bias" End="13" ID="C1504315" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1504315"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.5</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<StubRef>1.0</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.0</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.1</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.0</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.2</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.1</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.3</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.2</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.4</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.3</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.5</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>1.5</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.4</StubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.0</CellID>
+<CellValue>Fixed effects</CellValue>
+<Annotations>
+<Annotation Content="Fixed" End="5" ID="777587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1622604" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1100072" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="370174" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1944534" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=flat"/>
+<Annotation Content="fixed" End="5" ID="C0231441" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0231441"/>
+<Annotation Content="fixed" End="5" ID="C0443218" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0443218"/>
+<Annotation Content="fixed" End="5" ID="C2827483" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827483"/>
+<Annotation Content="effects" End="13" ID="13075584" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=effects"/>
+<Annotation Content="effects" End="13" ID="C1280500" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1280500"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.1</CellID>
+<CellValue>Fixed effects</CellValue>
+<Annotations>
+<Annotation Content="Fixed" End="5" ID="777587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1622604" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1100072" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="370174" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1944534" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=flat"/>
+<Annotation Content="fixed" End="5" ID="C0231441" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0231441"/>
+<Annotation Content="fixed" End="5" ID="C0443218" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0443218"/>
+<Annotation Content="fixed" End="5" ID="C2827483" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827483"/>
+<Annotation Content="effects" End="13" ID="13075584" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=effects"/>
+<Annotation Content="effects" End="13" ID="C1280500" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1280500"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>3.0</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.2</CellID>
+<CellValue>Fixed effects</CellValue>
+<Annotations>
+<Annotation Content="Fixed" End="5" ID="777587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1622604" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1100072" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="370174" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1944534" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=flat"/>
+<Annotation Content="fixed" End="5" ID="C0231441" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0231441"/>
+<Annotation Content="fixed" End="5" ID="C0443218" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0443218"/>
+<Annotation Content="fixed" End="5" ID="C2827483" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827483"/>
+<Annotation Content="effects" End="13" ID="13075584" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=effects"/>
+<Annotation Content="effects" End="13" ID="C1280500" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1280500"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>3.1</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.3</CellID>
+<CellValue>Fixed effects</CellValue>
+<Annotations>
+<Annotation Content="Fixed" End="5" ID="777587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1622604" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1100072" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="370174" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1944534" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=flat"/>
+<Annotation Content="fixed" End="5" ID="C0231441" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0231441"/>
+<Annotation Content="fixed" End="5" ID="C0443218" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0443218"/>
+<Annotation Content="fixed" End="5" ID="C2827483" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827483"/>
+<Annotation Content="effects" End="13" ID="13075584" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=effects"/>
+<Annotation Content="effects" End="13" ID="C1280500" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1280500"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>3.2</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.4</CellID>
+<CellValue>Fixed effects</CellValue>
+<Annotations>
+<Annotation Content="Fixed" End="5" ID="777587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1622604" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1100072" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="370174" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1944534" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=flat"/>
+<Annotation Content="fixed" End="5" ID="C0231441" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0231441"/>
+<Annotation Content="fixed" End="5" ID="C0443218" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0443218"/>
+<Annotation Content="fixed" End="5" ID="C2827483" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827483"/>
+<Annotation Content="effects" End="13" ID="13075584" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=effects"/>
+<Annotation Content="effects" End="13" ID="C1280500" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1280500"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>3.3</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.5</CellID>
+<CellValue>Fixed effects</CellValue>
+<Annotations>
+<Annotation Content="Fixed" End="5" ID="777587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1622604" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1100072" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="370174" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=fixed"/>
+<Annotation Content="Fixed" End="5" ID="1944534" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=flat"/>
+<Annotation Content="fixed" End="5" ID="C0231441" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0231441"/>
+<Annotation Content="fixed" End="5" ID="C0443218" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0443218"/>
+<Annotation Content="fixed" End="5" ID="C2827483" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827483"/>
+<Annotation Content="effects" End="13" ID="13075584" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=effects"/>
+<Annotation Content="effects" End="13" ID="C1280500" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1280500"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>3.4</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.0</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>V0</CellValue>
+<Annotations>
+<Annotation Content="v0" End="2" ID="C0441906" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0441906"/>
+<Annotation Content="v0" End="2" ID="C3540692" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C3540692"/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.1</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>6.16 log10 IU/mL</CellValue>
+<Annotations>
+<Annotation Content="6.16" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="6.16" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6 16" End="4" ID="C1825561" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1825561"/>
+<Annotation Content="log10" End="10" ID="992399" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=log"/>
+<Annotation Content="log10" End="10" ID="1247232" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=log"/>
+<Annotation Content="log10 ml" End="10" ID="C2346703" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2346703"/>
+<Annotation Content="log10" End="10" ID="C1690986" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1690986"/>
+<Annotation Content="iu" End="13" ID="C0439453" Source="MetaMap" Start="11" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439453"/>
+<Annotation Content="iu ml" End="16" ID="C0439458" Source="MetaMap" Start="11" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439458"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.2</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>6.09</CellValue>
+<Annotations>
+<Annotation Content="6.09" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="6.09" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.3</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>-1.1</CellValue>
+<Annotations>
+<Annotation Content="-1.1" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="1.1" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="2" ID="C2827734" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="2" ID="C2981698" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.4</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>6.16</CellValue>
+<Annotations>
+<Annotation Content="6.16" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="6.16" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6 16" End="4" ID="C1825561" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1825561"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.5</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>-0.021</CellValue>
+<Annotations>
+<Annotation Content="-0.021" End="6" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.021" End="6" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.0</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>δ</CellValue>
+<Annotations/>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.1</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>0.40 day-1</CellValue>
+<Annotations>
+<Annotation Content="0.40" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="-1" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="8" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.40" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="9" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="40" End="4" ID="C0439509" Source="MetaMap" Start="2" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439509"/>
+<Annotation Content="day-1" End="10" ID="14956162" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14924376" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14965916" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14958185" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14937564" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="15049944" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14291868" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="15009330" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="15009123" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=sidereal_day"/>
+<Annotation Content="day-1" End="10" ID="10763796" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=Day"/>
+<Annotation Content="day" End="8" ID="C0332173" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0332173"/>
+<Annotation Content="1" End="10" ID="C2827734" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="10" ID="C2981698" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+<Annotation Content="day" End="8" ID="C0439228" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439228"/>
+<Annotation Content="day" End="8" ID="C0439505" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439505"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.2</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>0.18</CellValue>
+<Annotations>
+<Annotation Content="0.18" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.18" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.3</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>-55.2</CellValue>
+<Annotations>
+<Annotation Content="-55.2" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="55.2" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="55" End="3" ID="C0450382" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0450382"/>
+<Annotation Content="2" End="5" ID="C0740116" Source="MetaMap" Start="4" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="5" ID="C2827735" Source="MetaMap" Start="4" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="5" ID="C2981700" Source="MetaMap" Start="4" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.4</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>0.40</CellValue>
+<Annotations>
+<Annotation Content="0.40" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.40" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="40" End="4" ID="C0439509" Source="MetaMap" Start="2" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439509"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.5</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>+0.78</CellValue>
+<Annotations>
+<Annotation Content="+0.78" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.78" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.0</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>c</CellValue>
+<Annotations>
+<Annotation Content="c" End="1" ID="13534257" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=degree_centigrade"/>
+<Annotation Content="c" End="1" ID="15083587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=speed_of_light"/>
+<Annotation Content="c" End="1" ID="14634324" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=deoxycytidine_monophosphate"/>
+<Annotation Content="c" End="1" ID="14633070" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=cytosine"/>
+<Annotation Content="c" End="1" ID="14439287" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=carbon"/>
+<Annotation Content="c" End="1" ID="13569316" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=hundred"/>
+<Annotation Content="c" End="1" ID="13456968" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=coulomb"/>
+<Annotation Content="c" End="1" ID="6810388" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=C"/>
+<Annotation Content="c" End="1" ID="6774215" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=C"/>
+<Annotation Content="c" End="1" ID="6739479" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=C"/>
+<Annotation Content="c" End="1" ID="3036263" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=coke"/>
+<Annotation Content="C" End="1" ID="http://dbpedia.org/resource/C" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/C"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.1</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>2.00 day-1</CellValue>
+<Annotations>
+<Annotation Content="2.00" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="-1" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="8" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="2.00" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="9" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="2" End="1" ID="C0740116" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="1" ID="C2827735" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="1" ID="C2981700" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+<Annotation Content="day-1" End="10" ID="14956162" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14924376" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14965916" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14958185" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14937564" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="15049944" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="14291868" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="15009330" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=day"/>
+<Annotation Content="day-1" End="10" ID="15009123" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=sidereal_day"/>
+<Annotation Content="day-1" End="10" ID="10763796" Source="WordNet" Start="5" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=Day"/>
+<Annotation Content="day" End="8" ID="C0332173" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0332173"/>
+<Annotation Content="1" End="10" ID="C2827734" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="10" ID="C2981698" Source="MetaMap" Start="9" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+<Annotation Content="day" End="8" ID="C0439228" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439228"/>
+<Annotation Content="day" End="8" ID="C0439505" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439505"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.2</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>1.10</CellValue>
+<Annotations>
+<Annotation Content="1.10" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="1.10" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="1" ID="C2827734" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="1" ID="C2981698" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.3</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>-44.8</CellValue>
+<Annotations>
+<Annotation Content="-44.8" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="44.8" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.4</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>2.03</CellValue>
+<Annotations>
+<Annotation Content="2.03" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="2.03" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2" End="1" ID="C0740116" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="1" ID="C2827735" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="1" ID="C2981700" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.5</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>+1.5</CellValue>
+<Annotations>
+<Annotation Content="+1.5" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="1.5" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1 5" End="4" ID="C0450316" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0450316"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.0</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>ε</CellValue>
+<Annotations/>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.1</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>0.80</CellValue>
+<Annotations>
+<Annotation Content="0.80" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.80" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.2</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>0.93</CellValue>
+<Annotations>
+<Annotation Content="0.93" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.93" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.3</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>+15.8</CellValue>
+<Annotations>
+<Annotation Content="+15.8" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="15.8" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.4</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>0.79</CellValue>
+<Annotations>
+<Annotation Content="0.79" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.79" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.5</CellID>
+<SuperRowRef>3.0</SuperRowRef>
+<CellValue>-1.3</CellValue>
+<Annotations>
+<Annotation Content="-1.3" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="1.3" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="2" ID="C2827734" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="3" End="4" ID="C0439086" Source="MetaMap" Start="3" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439086"/>
+<Annotation Content="3" End="4" ID="C2827736" Source="MetaMap" Start="3" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827736"/>
+<Annotation Content="3" End="4" ID="C2981702" Source="MetaMap" Start="3" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981702"/>
+<Annotation Content="1" End="2" ID="C2981698" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.0</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.1</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>8.0</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.2</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>8.1</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.3</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>8.2</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.4</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>8.3</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.5</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>8.4</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>9.0</CellID>
+<CellValue>Variances</CellValue>
+<Annotations>
+<Annotation Content="Variances" End="9" ID="7265732" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="7083300" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=division"/>
+<Annotation Content="Variances" End="9" ID="5946759" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="4693851" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="4679455" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variability"/>
+<Annotation Content="Variances" End="9" ID="1127151" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="191338" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variation"/>
+<Annotation Content="variance" End="9" ID="C1711260" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1711260"/>
+<Annotation Content="variance" End="9" ID="C2348152" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2348152"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>9</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>9.1</CellID>
+<CellValue>Variances</CellValue>
+<Annotations>
+<Annotation Content="Variances" End="9" ID="7265732" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="7083300" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=division"/>
+<Annotation Content="Variances" End="9" ID="5946759" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="4693851" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="4679455" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variability"/>
+<Annotation Content="Variances" End="9" ID="1127151" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="191338" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variation"/>
+<Annotation Content="variance" End="9" ID="C1711260" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1711260"/>
+<Annotation Content="variance" End="9" ID="C2348152" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2348152"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>9.0</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>9</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>9.2</CellID>
+<CellValue>Variances</CellValue>
+<Annotations>
+<Annotation Content="Variances" End="9" ID="7265732" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="7083300" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=division"/>
+<Annotation Content="Variances" End="9" ID="5946759" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="4693851" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="4679455" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variability"/>
+<Annotation Content="Variances" End="9" ID="1127151" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="191338" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variation"/>
+<Annotation Content="variance" End="9" ID="C1711260" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1711260"/>
+<Annotation Content="variance" End="9" ID="C2348152" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2348152"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>9.1</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>9</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>9.3</CellID>
+<CellValue>Variances</CellValue>
+<Annotations>
+<Annotation Content="Variances" End="9" ID="7265732" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="7083300" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=division"/>
+<Annotation Content="Variances" End="9" ID="5946759" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="4693851" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="4679455" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variability"/>
+<Annotation Content="Variances" End="9" ID="1127151" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="191338" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variation"/>
+<Annotation Content="variance" End="9" ID="C1711260" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1711260"/>
+<Annotation Content="variance" End="9" ID="C2348152" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2348152"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>9.2</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>9</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>9.4</CellID>
+<CellValue>Variances</CellValue>
+<Annotations>
+<Annotation Content="Variances" End="9" ID="7265732" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="7083300" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=division"/>
+<Annotation Content="Variances" End="9" ID="5946759" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="4693851" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="4679455" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variability"/>
+<Annotation Content="Variances" End="9" ID="1127151" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="191338" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variation"/>
+<Annotation Content="variance" End="9" ID="C1711260" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1711260"/>
+<Annotation Content="variance" End="9" ID="C2348152" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2348152"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>9.3</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>9</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>9.5</CellID>
+<CellValue>Variances</CellValue>
+<Annotations>
+<Annotation Content="Variances" End="9" ID="7265732" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="7083300" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=division"/>
+<Annotation Content="Variances" End="9" ID="5946759" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="4693851" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=discrepancy"/>
+<Annotation Content="Variances" End="9" ID="4679455" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variability"/>
+<Annotation Content="Variances" End="9" ID="1127151" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variance"/>
+<Annotation Content="Variances" End="9" ID="191338" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=variation"/>
+<Annotation Content="variance" End="9" ID="C1711260" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1711260"/>
+<Annotation Content="variance" End="9" ID="C2348152" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2348152"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>9.4</StubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+<CellRole>SuperRow</CellRole>
+</CellRoles>
+<CellRowNum>9</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>10.0</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>σγ02
+ MathType@MTEF@5@5@+=feaafiart1ev1aaatCvAUfKttLearuWrP9MDH5MBPbIqV92AaeXatLxBI9gBaebbnrfifHhDYfgasaacH8akY=wiFfYdH8Gipec8Eeeu0xXdbba9frFj0=OqFfea0dXdd9vqai=hGuQ8kuc9pgc9s8qqaq=dirpe0xb9q8qiLsFr0=vr0=vr0dc8meaabaqaciaacaGaaeqabaqabeGadaaakeaaiiGacqWFdpWCdaqhaaWcbaGae83SdC2aaSbaaWqaaiabicdaWaqabaaaleaacqaIYaGmaaaaaa@325D@</CellValue>
+<Annotations>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="INTEGER" URL=""/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>10</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>10.1</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>0.49</CellValue>
+<Annotations>
+<Annotation Content="0.49" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.49" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>10.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>10</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>10.2</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>0.59</CellValue>
+<Annotations>
+<Annotation Content="0.59" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.59" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>10.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>10</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>10.3</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>+20.3</CellValue>
+<Annotations>
+<Annotation Content="+20.3" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="20.3" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="3" End="5" ID="C0439086" Source="MetaMap" Start="4" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439086"/>
+<Annotation Content="3" End="5" ID="C2827736" Source="MetaMap" Start="4" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827736"/>
+<Annotation Content="3" End="5" ID="C2981702" Source="MetaMap" Start="4" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981702"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>10.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>10</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>10.4</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>0.46</CellValue>
+<Annotations>
+<Annotation Content="0.46" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.46" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>10.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>10</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>10.5</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>-6.4</CellValue>
+<Annotations>
+<Annotation Content="-6.4" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="6.4" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6 4" End="4" ID="C0442748" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0442748"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>10.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>10</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>11.0</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>σγ12
+ MathType@MTEF@5@5@+=feaafiart1ev1aaatCvAUfKttLearuWrP9MDH5MBPbIqV92AaeXatLxBI9gBaebbnrfifHhDYfgasaacH8akY=wiFfYdH8Gipec8Eeeu0xXdbba9frFj0=OqFfea0dXdd9vqai=hGuQ8kuc9pgc9s8qqaq=dirpe0xb9q8qiLsFr0=vr0=vr0dc8meaabaqaciaacaGaaeqabaqabeGadaaakeaaiiGacqWFdpWCdaqhaaWcbaGae83SdC2aaSbaaWqaaiabigdaXaqabaaaleaacqaIYaGmaaaaaa@325F@</CellValue>
+<Annotations>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="INTEGER" URL=""/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>11</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>11.1</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>2.69</CellValue>
+<Annotations>
+<Annotation Content="2.69" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="2.69" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2" End="1" ID="C0740116" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="69" End="4" ID="C0450388" Source="MetaMap" Start="2" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0450388"/>
+<Annotation Content="2" End="1" ID="C2827735" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="1" ID="C2981700" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>11.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>11</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>11.2</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>2.18</CellValue>
+<Annotations>
+<Annotation Content="2.18" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="2.18" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2" End="1" ID="C0740116" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="1" ID="C2827735" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="1" ID="C2981700" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>11.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>11</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>11.3</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>-18.8</CellValue>
+<Annotations>
+<Annotation Content="-18.8" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="18.8" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>11.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>11</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>11.4</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>2.31</CellValue>
+<Annotations>
+<Annotation Content="2.31" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="2.31" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2" End="1" ID="C0740116" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="31" End="4" ID="C0450355" Source="MetaMap" Start="2" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0450355"/>
+<Annotation Content="2" End="1" ID="C2827735" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="1" ID="C2981700" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>11.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>11</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>11.5</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>-13.9</CellValue>
+<Annotations>
+<Annotation Content="-13.9" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="13.9" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>11.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>11</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>12.0</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>σe2
+ MathType@MTEF@5@5@+=feaafiart1ev1aaatCvAUfKttLearuWrP9MDH5MBPbIqV92AaeXatLxBI9gBaebbnrfifHhDYfgasaacH8akY=wiFfYdH8Gipec8Eeeu0xXdbba9frFj0=OqFfea0dXdd9vqai=hGuQ8kuc9pgc9s8qqaq=dirpe0xb9q8qiLsFr0=vr0=vr0dc8meaabaqaciaacaGaaeqabaqabeGadaaakeaaiiGacqWFdpWCdaqhaaWcbaGaemyzaugabaGaeGOmaidaaaaa@30E8@</CellValue>
+<Annotations>
+<Annotation Content="5" End="20" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="19" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="22" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="21" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="20" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="19" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="5" End="22" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="21" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="e2" End="2" ID="C3539520" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C3539520"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>2.0</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>12</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>12.1</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>0.04</CellValue>
+<Annotations>
+<Annotation Content="0.04" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.04" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.1</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>12.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>12</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>12.2</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>0.09</CellValue>
+<Annotations>
+<Annotation Content="0.09" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.09" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.2</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>12.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>12</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>12.3</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>+133.2</CellValue>
+<Annotations>
+<Annotation Content="+133.2" End="6" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="133.2" End="6" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2" End="6" ID="C0740116" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="6" ID="C2827735" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="6" ID="C2981700" Source="MetaMap" Start="5" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.3</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>12.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>12</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>12.4</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>0.039</CellValue>
+<Annotations>
+<Annotation Content="0.039" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.039" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.4</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>12.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>12</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>12.5</CellID>
+<SuperRowRef>9.0</SuperRowRef>
+<CellValue>-2.4</CellValue>
+<Annotations>
+<Annotation Content="-2.4" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="2.4" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="1" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2" End="2" ID="C0740116" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="2" ID="C2827735" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="2" ID="C2981700" Source="MetaMap" Start="1" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>2.5</HeaderRef>
+<HeadStubRef>2.0</HeadStubRef>
+<StubRef>12.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>12</CellRowNum>
+<CellColumnNum>5</CellColumnNum>
+</Cell>
+</Cells>
+</Table>
+<Table>
+<TableOrder>Table 2</TableOrder>
+<TableCaption>Estimates of model parameters using non linear mixed models taking into account left-censored (undetectable) values (corrected) or not (crude) with data from ROCO2 clinical trial. N = 17 patients, 100 measures, 12% left-censored.</TableCaption>
+<TableFooter/>
+<TableStructureType>MATRIX</TableStructureType>
+<TablePragmaticClass>findings</TablePragmaticClass>
+<TabHasXML>yes</TabHasXML>
+<Cells>
+<Cell>
+<CellID>0.0</CellID>
+<CellValue>Parameter</CellValue>
+<Annotations>
+<Annotation Content="Parameter" End="9" ID="5785228" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=parameter"/>
+<Annotation Content="Parameter" End="9" ID="7227778" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=parameter"/>
+<Annotation Content="Parameter" End="9" ID="5785434" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=parameter"/>
+<Annotation Content="Parameter" End="9" ID="http://dbpedia.org/resource/Parameter" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/Parameter"/>
+<Annotation Content="parameter" End="9" ID="C0549193" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0549193"/>
+<Annotation Content="parameter" End="9" ID="C1704769" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C1704769"/>
+<Annotation Content="parameter" End="9" ID="C2350001" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2350001"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.1</CellID>
+<CellValue>Crude approach</CellValue>
+<Annotations>
+<Annotation Content="Crude" End="5" ID="2305477" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=crude"/>
+<Annotation Content="Crude" End="5" ID="719222" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=coarse"/>
+<Annotation Content="Crude" End="5" ID="2023200" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=unrefined"/>
+<Annotation Content="Crude" End="5" ID="856328" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=crude"/>
+<Annotation Content="Crude" End="5" ID="585963" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=blunt"/>
+<Annotation Content="Crude" End="5" ID="439830" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=crude"/>
+<Annotation Content="approach" End="14" ID="4690529" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=approach"/>
+<Annotation Content="approach" End="14" ID="C0449445" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0449445"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.2</CellID>
+<CellValue>Crude approach</CellValue>
+<Annotations>
+<Annotation Content="Crude" End="5" ID="2305477" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=crude"/>
+<Annotation Content="Crude" End="5" ID="719222" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=coarse"/>
+<Annotation Content="Crude" End="5" ID="2023200" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=unrefined"/>
+<Annotation Content="Crude" End="5" ID="856328" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=crude"/>
+<Annotation Content="Crude" End="5" ID="585963" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=blunt"/>
+<Annotation Content="Crude" End="5" ID="439830" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=crude"/>
+<Annotation Content="approach" End="14" ID="4690529" Source="WordNet" Start="6" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=approach"/>
+<Annotation Content="approach" End="14" ID="C0449445" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0449445"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.3</CellID>
+<CellValue>Corrected approach</CellValue>
+<Annotations>
+<Annotation Content="Corrected" End="9" ID="666027" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=corrected"/>
+<Annotation Content="Corrected" End="9" ID="1970305" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=chastised"/>
+<Annotation Content="corrected" End="9" ID="C0205202" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205202"/>
+<Annotation Content="approach" End="18" ID="4690529" Source="WordNet" Start="10" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=approach"/>
+<Annotation Content="approach" End="18" ID="C0449445" Source="MetaMap" Start="10" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0449445"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>0.4</CellID>
+<CellValue>Corrected approach</CellValue>
+<Annotations>
+<Annotation Content="Corrected" End="9" ID="666027" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=corrected"/>
+<Annotation Content="Corrected" End="9" ID="1970305" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=chastised"/>
+<Annotation Content="corrected" End="9" ID="C0205202" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0205202"/>
+<Annotation Content="approach" End="18" ID="4690529" Source="WordNet" Start="10" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=approach"/>
+<Annotation Content="approach" End="18" ID="C0449445" Source="MetaMap" Start="10" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0449445"/>
+</Annotations>
+<CellType>Text</CellType>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>0</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.0</CellID>
+<CellValue/>
+<Annotations/>
+<CellType>Empty</CellType>
+<HeaderRef>0.0</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.1</CellID>
+<CellValue>Estimate</CellValue>
+<Annotations>
+<Annotation Content="Estimate" End="8" ID="664380" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimate" End="8" ID="704037" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=calculate"/>
+<Annotation Content="estimate" End="8" ID="C0750572" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.1</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.2</CellID>
+<CellValue>95% CI</CellValue>
+<Annotations>
+<Annotation Content="95" End="2" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="95%" End="3" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="PERCENTAGE" URL=""/>
+<Annotation Content="95" End="2" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="95" End="2" ID="http://dbpedia.org/resource/95" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/95"/>
+<Annotation Content="CI" End="6" ID="13465919" Source="WordNet" Start="4" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=curie"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.2</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.3</CellID>
+<CellValue>Estimate</CellValue>
+<Annotations>
+<Annotation Content="Estimate" End="8" ID="664380" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=estimate"/>
+<Annotation Content="Estimate" End="8" ID="704037" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=calculate"/>
+<Annotation Content="estimate" End="8" ID="C0750572" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0750572"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.3</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>1.4</CellID>
+<CellValue>95% CI</CellValue>
+<Annotations>
+<Annotation Content="95" End="2" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="95%" End="3" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="PERCENTAGE" URL=""/>
+<Annotation Content="95" End="2" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="95" End="2" ID="http://dbpedia.org/resource/95" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/95"/>
+<Annotation Content="CI" End="6" ID="13465919" Source="WordNet" Start="4" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=curie"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>0.4</HeaderRef>
+<HeadStubRef>0.0</HeadStubRef>
+<CellRoles>
+<CellRole>Header</CellRole>
+</CellRoles>
+<CellRowNum>1</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.0</CellID>
+<CellValue>V0</CellValue>
+<Annotations>
+<Annotation Content="v0" End="2" ID="C0441906" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0441906"/>
+<Annotation Content="v0" End="2" ID="C3540692" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C3540692"/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.1</CellID>
+<CellValue>6.13</CellValue>
+<Annotations>
+<Annotation Content="6.13" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="6.13" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.2</CellID>
+<CellValue>5.78; 6.48</CellValue>
+<Annotations>
+<Annotation Content="5.78; 6.48" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="5.78" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6.48" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="5" End="1" ID="C0439084" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439084"/>
+<Annotation Content="5" End="1" ID="C0728893" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0728893"/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.3</CellID>
+<CellValue>6.12</CellValue>
+<Annotations>
+<Annotation Content="6.12" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="6.12" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6 12" End="4" ID="C0442752" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0442752"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>2.4</CellID>
+<CellValue>5.77; 6.47</CellValue>
+<Annotations>
+<Annotation Content="5.77; 6.47" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="5.77" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6.47" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="5" End="1" ID="C0439084" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439084"/>
+<Annotation Content="5" End="1" ID="C0728893" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0728893"/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>2.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>2</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.0</CellID>
+<CellValue>δ</CellValue>
+<Annotations/>
+<CellType>Text</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.1</CellID>
+<CellValue>0.13</CellValue>
+<Annotations>
+<Annotation Content="0.13" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.13" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>3.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.2</CellID>
+<CellValue>0.11; 0.17</CellValue>
+<Annotations>
+<Annotation Content="0.11; 0.17" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.11" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.17" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>3.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.3</CellID>
+<CellValue>0.19</CellValue>
+<Annotations>
+<Annotation Content="0.19" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.19" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>3.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>3.4</CellID>
+<CellValue>0.14; 0.26</CellValue>
+<Annotations>
+<Annotation Content="0.14; 0.26" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.14" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.26" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>3.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>3</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.0</CellID>
+<CellValue>c</CellValue>
+<Annotations>
+<Annotation Content="c" End="1" ID="13534257" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=degree_centigrade"/>
+<Annotation Content="c" End="1" ID="15083587" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=speed_of_light"/>
+<Annotation Content="c" End="1" ID="14634324" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=deoxycytidine_monophosphate"/>
+<Annotation Content="c" End="1" ID="14633070" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=cytosine"/>
+<Annotation Content="c" End="1" ID="14439287" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=carbon"/>
+<Annotation Content="c" End="1" ID="13569316" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=hundred"/>
+<Annotation Content="c" End="1" ID="13456968" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=coulomb"/>
+<Annotation Content="c" End="1" ID="6810388" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=C"/>
+<Annotation Content="c" End="1" ID="6774215" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=C"/>
+<Annotation Content="c" End="1" ID="6739479" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=C"/>
+<Annotation Content="c" End="1" ID="3036263" Source="WordNet" Start="0" Type="ValueSemantic" TypeVal="" URL="http://wordnetweb.princeton.edu/perl/webwn?s=coke"/>
+<Annotation Content="C" End="1" ID="http://dbpedia.org/resource/C" Source="DBPedia" Start="0" Type="ValueSemantic" TypeVal="" URL="http://dbpedia.org/resource/C"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.1</CellID>
+<CellValue>1.73</CellValue>
+<Annotations>
+<Annotation Content="1.73" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="1.73" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="1" ID="C2827734" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="1" ID="C2981698" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.2</CellID>
+<CellValue>1.15; 2.61</CellValue>
+<Annotations>
+<Annotation Content="1.15; 2.61" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="1.15" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="2.61" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="1" ID="C2827734" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="1" ID="C2981698" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+<Annotation Content="2" End="7" ID="C0740116" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0740116"/>
+<Annotation Content="2" End="7" ID="C2827735" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827735"/>
+<Annotation Content="2" End="7" ID="C2981700" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981700"/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.3</CellID>
+<CellValue>1.66</CellValue>
+<Annotations>
+<Annotation Content="1.66" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="1.66" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="1" End="1" ID="C2827734" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827734"/>
+<Annotation Content="1" End="1" ID="C2981698" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981698"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>4.4</CellID>
+<CellValue>0.88; 3.13</CellValue>
+<Annotations>
+<Annotation Content="0.88; 3.13" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.88" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="3.13" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="3" End="7" ID="C0439086" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439086"/>
+<Annotation Content="3" End="7" ID="C2827736" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827736"/>
+<Annotation Content="3" End="7" ID="C2981702" Source="MetaMap" Start="6" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981702"/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>4.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>4</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.0</CellID>
+<CellValue>ε</CellValue>
+<Annotations/>
+<CellType>Text</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.1</CellID>
+<CellValue>0.89</CellValue>
+<Annotations>
+<Annotation Content="0.89" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.89" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.2</CellID>
+<CellValue>0.74; 0.96</CellValue>
+<Annotations>
+<Annotation Content="0.74; 0.96" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.74" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.96" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.3</CellID>
+<CellValue>0.86</CellValue>
+<Annotations>
+<Annotation Content="0.86" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.86" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>5.4</CellID>
+<CellValue>0.64; 0.95</CellValue>
+<Annotations>
+<Annotation Content="0.64; 0.95" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.64" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.95" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>5.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>5</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.0</CellID>
+<CellValue>σγ02
+ MathType@MTEF@5@5@+=feaafiart1ev1aaatCvAUfKttLearuWrP9MDH5MBPbIqV92AaeXatLxBI9gBaebbnrfifHhDYfgasaacH8akY=wiFfYdH8Gipec8Eeeu0xXdbba9frFj0=OqFfea0dXdd9vqai=hGuQ8kuc9pgc9s8qqaq=dirpe0xb9q8qiLsFr0=vr0=vr0dc8meaabaqaciaacaGaaeqabaqabeGadaaakeaaiiGacqWFdpWCdaqhaaWcbaGae83SdC2aaSbaaWqaaiabicdaWaqabaaaleaacqaIYaGmaaaaaa@325D@</CellValue>
+<Annotations>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="INTEGER" URL=""/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.1</CellID>
+<CellValue>0.42</CellValue>
+<Annotations>
+<Annotation Content="0.42" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.42" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.2</CellID>
+<CellValue>0.082; 0.75</CellValue>
+<Annotations>
+<Annotation Content="0.082; 0.75" End="11" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.082" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.75" End="11" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="7" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.3</CellID>
+<CellValue>0.41</CellValue>
+<Annotations>
+<Annotation Content="0.41" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.41" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>6.4</CellID>
+<CellValue>0.077; 0.74</CellValue>
+<Annotations>
+<Annotation Content="0.077; 0.74" End="11" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.077" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.74" End="11" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="7" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>6.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>6</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.0</CellID>
+<CellValue>σγ12
+ MathType@MTEF@5@5@+=feaafiart1ev1aaatCvAUfKttLearuWrP9MDH5MBPbIqV92AaeXatLxBI9gBaebbnrfifHhDYfgasaacH8akY=wiFfYdH8Gipec8Eeeu0xXdbba9frFj0=OqFfea0dXdd9vqai=hGuQ8kuc9pgc9s8qqaq=dirpe0xb9q8qiLsFr0=vr0=vr0dc8meaabaqaciaacaGaaeqabaqabeGadaaakeaaiiGacqWFdpWCdaqhaaWcbaGae83SdC2aaSbaaWqaaiabigdaXaqabaaaleaacqaIYaGmaaaaaa@325F@</CellValue>
+<Annotations>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="21" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="20" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="5" End="23" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="22" Type="ValueType" TypeVal="INTEGER" URL=""/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.1</CellID>
+<CellValue>3.23</CellValue>
+<Annotations>
+<Annotation Content="3.23" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="3.23" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="3" End="1" ID="C0439086" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439086"/>
+<Annotation Content="23" End="4" ID="C0450348" Source="MetaMap" Start="2" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0450348"/>
+<Annotation Content="3" End="1" ID="C2827736" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827736"/>
+<Annotation Content="3" End="1" ID="C2981702" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981702"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.2</CellID>
+<CellValue>0.38; 6.09</CellValue>
+<Annotations>
+<Annotation Content="0.38; 6.09" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.38" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="6.09" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.3</CellID>
+<CellValue>3.77</CellValue>
+<Annotations>
+<Annotation Content="3.77" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="3.77" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="3" End="1" ID="C0439086" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C0439086"/>
+<Annotation Content="3" End="1" ID="C2827736" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2827736"/>
+<Annotation Content="3" End="1" ID="C2981702" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C2981702"/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>7.4</CellID>
+<CellValue>0.38; 7.16</CellValue>
+<Annotations>
+<Annotation Content="0.38; 7.16" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.38" End="4" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="7.16" End="10" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="6" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>7.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>7</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.0</CellID>
+<CellValue>σe2
+ MathType@MTEF@5@5@+=feaafiart1ev1aaatCvAUfKttLearuWrP9MDH5MBPbIqV92AaeXatLxBI9gBaebbnrfifHhDYfgasaacH8akY=wiFfYdH8Gipec8Eeeu0xXdbba9frFj0=OqFfea0dXdd9vqai=hGuQ8kuc9pgc9s8qqaq=dirpe0xb9q8qiLsFr0=vr0=vr0dc8meaabaqaciaacaGaaeqabaqabeGadaaakeaaiiGacqWFdpWCdaqhaaWcbaGaemyzaugabaGaeGOmaidaaaaa@30E8@</CellValue>
+<Annotations>
+<Annotation Content="5" End="20" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="19" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="22" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="21" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="5" End="20" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="19" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="5" End="22" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="21" Type="ValueType" TypeVal="INTEGER" URL=""/>
+<Annotation Content="e2" End="2" ID="C3539520" Source="MetaMap" Start="0" Type="ValueSemantic" TypeVal="" URL="http://www.medindex.am/glossary/mesh/defini.php?action=search&amp;type=cui&amp;word=C3539520"/>
+</Annotations>
+<CellType>Text</CellType>
+<HeaderRef>1.0</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<CellRoles>
+<CellRole>Stub</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>0</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.1</CellID>
+<CellValue>0.071</CellValue>
+<Annotations>
+<Annotation Content="0.071" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.071" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.1</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>8.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>1</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.2</CellID>
+<CellValue>0.045; 0.097</CellValue>
+<Annotations>
+<Annotation Content="0.045; 0.097" End="12" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.045" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.097" End="12" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="7" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.2</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>8.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>2</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.3</CellID>
+<CellValue>0.073</CellValue>
+<Annotations>
+<Annotation Content="0.073" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="SINGLE" URL=""/>
+<Annotation Content="0.073" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Numeric</CellType>
+<HeaderRef>1.3</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>8.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>3</CellColumnNum>
+</Cell>
+<Cell>
+<CellID>8.4</CellID>
+<CellValue>0.044; 0.10</CellValue>
+<Annotations>
+<Annotation Content="0.044; 0.10" End="11" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="RANGE" URL=""/>
+<Annotation Content="0.044" End="5" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="0" Type="ValueType" TypeVal="FLOAT" URL=""/>
+<Annotation Content="0.10" End="11" ID="" Source="TableAnnotatorSyntacticAnalizer" Start="7" Type="ValueType" TypeVal="FLOAT" URL=""/>
+</Annotations>
+<CellType>Partially Numeric</CellType>
+<HeaderRef>1.4</HeaderRef>
+<HeadStubRef>1.0</HeadStubRef>
+<StubRef>8.0</StubRef>
+<CellRoles>
+<CellRole>Data</CellRole>
+</CellRoles>
+<CellRowNum>8</CellRowNum>
+<CellColumnNum>4</CellColumnNum>
+</Cell>
+</Cells>
+</Table>
+</Tables>
+</Article>

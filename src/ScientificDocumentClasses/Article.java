@@ -8,8 +8,8 @@ public class Article {
 	private String pissn;
 	private String eissn;
 	private String PaperTitle;
-	public Author authors;
-	public LinkedList<String> KeyWords;
+	public LinkedList<Author> authors = new LinkedList<Author>();
+	public LinkedList<String> KeyWords = new LinkedList<String>();
 	private Journal journal;
 	private String ArticleAbstract;
 	public LinkedList<Table> tables;
