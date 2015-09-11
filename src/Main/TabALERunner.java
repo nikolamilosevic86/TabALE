@@ -14,7 +14,7 @@ public class TabALERunner {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("TabALE says hi and I love you");
+		System.out.println("TabALI says hi and I love you");
 
 	}
 

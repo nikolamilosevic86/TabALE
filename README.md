@@ -1,2 +1,2 @@
-# TabALE
-Table Analytics Language Engine
+# TabALI
+Table Analytics Language Interpreter
