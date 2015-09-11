@@ -54,23 +54,18 @@ public class AnnotationReader {
 				for(int i = 0; i < nList.getLength();i++)
 				{
 					Author auth = new Author();
-					NodeList childNodes = nList.item(i).getChildNodes();
-					for(int j = 0; j<childNodes.getLength();j++)
-					{
-						if(childNodes.item(j).getNodeName().equals("AuthorName"))
-						{
-							auth.setAuthorName(childNodes.item(j).getTextContent());
+
+						Node nNode = nList.item(i);
+						if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+							Element eElement = (Element) nNode;
+							if(nNode.hasChildNodes()) System.out.println(nNode.getFirstChild().getNodeValue());
+							auth.setAuthorName(eElement.getElementsByTagName("AuthorName").item(0).getTextContent());
+							auth.setAuthorName(eElement.getElementsByTagName("AuthorAffiliation").item(0).getTextContent());
+							auth.setAuthorName(eElement.getElementsByTagName("AuthorEmail").item(0).getTextContent());
+							//System.out.println(auth.getAuthorEmail());
 						}
-						if(childNodes.item(j).getNodeName().equals("AuthorAffiliation"))
-						{
-							auth.setAuthorName(childNodes.item(j).getTextContent());
-						}
-						if(childNodes.item(j).getNodeName().equals("AuthorEmail"))
-						{
-							auth.setAuthorName(childNodes.item(j).getTextContent());
-						}
-						System.out.println(auth.getAuthorEmail());
-					}
+						
+					
 					TabALIRunner.currentArticle.authors.add(auth);
 				}
 				System.out.println(nList.getLength());
